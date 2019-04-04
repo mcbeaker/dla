@@ -1,0 +1,113 @@
+Files Included 
+
+Collagen_Aggregate.java
+- aggregate object file
+
+Collagen_Chain.java
+- chains that make up a Collagen_Aggregate object
+
+Collagen_Monomer.java
+- spheres that make up a Collagen_Chain object
+
+Combinations.java
+- function that converts decimal combinations into binary combinations of length 10 
+
+DlaTools.java
+- functions that are called through the simulation
+
+Driver.java
+- main file to run the dla simulation
+
+Example - use the command line or programming tool such as eclipse - making sure Java is properly installed
+
+Enter number of Chains: 1000
+Enter number of simulations per combination: 2
+Enter Combo Start: 
+41
+Enter Combo End: 
+41
+
+This entry will run a simulation of the combination 0000110000 (48 in decimal) - 41 is the location within the binComboArray
+
+
+This simulation will create two folders (xyzFiles and Analysis) with the following content
+
+1. xyzFiles
+   a. 48_0_[0, 0, 0, 0, 1, 1, 0, 0, 0, 0].xyz
+   b. 48_1_[0, 0, 0, 0, 1, 1, 0, 0, 0, 0].xyz
+2. Analysis
+   a. 48_[0, 0, 0, 0, 1, 1, 0, 0, 0, 0]_Analysis.txt
+---------------------------------------------------------------------------------------------------------------
+Analysis content
+
+Simulation#: 0
+Combo: [0,0,0,0,1,1,0,0,0,0]
+C.O.M: -3.398 1.5848264911500085 4.0
+MaxZ: 18
+MinZ: -8
+ZLength: 26
+MaxMNRadius: 26.627053911388696
+Kills: 25525
+Monomers: 26524
+AveStepsBound: 56504.13913913905
+VarStepsBound: 3.288873315767193E9
+StdStepsBound: 57348.69933805991
+OverallSteps: 56447635
+Kills/Monomers: 0.962335997587091
+Elapsed Time: 1.8545834
+
+Simulation#: 1
+Combo: [0,0,0,0,1,1,0,0,0,0]
+C.O.M: -1.6845 -4.09889824186502 4.0
+MaxZ: 20
+MinZ: -9
+ZLength: 29
+MaxMNRadius: 28.827070610799147
+Kills: 26281
+Monomers: 27280
+AveStepsBound: 71129.68268268275
+VarStepsBound: 9.017783265204468E9
+StdStepsBound: 94962.00958912184
+OverallSteps: 71058553
+Kills/Monomers: 0.9633797653958944
+Elapsed Time: 2.56205
+
+***Combination Analysis***
+TotalEllapsedTime(min): 4.416633
+AveElapTime: 2.208316743373871
+***ZLength***
+AverZLength: 27.5
+VarZLength: 4.5
+StdDZLength: 2.1213203435596424
+***MNLength***
+AverMNLength: 27.72706226109392
+VarMNLength: 2.4200367388424313
+StdDMNLength: 1.5556467268767775
+AveC.O.M -2.5412500000000002 -1.2570358753575055 4.0
+***Kills***
+AverKills: 25903.0
+VarKills: 285768.0
+StdDKill: 534.5727265770299
+***Monomers***
+AverMonomers: 26902.0
+VarMonomers: 285768.0
+StdDMonomers: 534.5727265770299
+***BoundSteps***
+AverStepsBound: 63816.9109109109
+VarStepsBound: 1.0695326197204635E8
+StdDStepsBound: 10341.821018178875
+***OverallSteps***
+AverCombStepsOverall: 6.3753094E7
+VarCombStepsOverall: 1.06739462401362E14
+StdDCombStepsOverall: 1.0331479197160589E7
+
+---------------------------------------------------------------------------------------------------------------
+Environment.java
+- creates the dla environment
+
+IO.java
+- functions that help the user enter data
+
+readme
+
+
